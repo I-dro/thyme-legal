@@ -110,7 +110,7 @@
 <main>
 
     <section>
-        <span class="badge">Last updated: July 6, 2026</span>
+        <span class="badge">Last updated: July 7, 2026</span>
         <p>This Privacy Policy explains how <strong>Purview LLC</strong> ("we", "us", "our"), the
         developer of the Thyme mobile application (the "App"), collects, uses, and protects information in
         connection with your use of the App.</p>
@@ -164,13 +164,13 @@
                 </tr>
                 <tr>
                     <td><strong>Anonymous install identifier</strong> — a random UUID generated on first launch. It is <strong>not</strong> tied to your name, email, Apple ID, or device ID.</td>
-                    <td>Stored on your device only. Not currently transmitted off the device.</td>
-                    <td>Reserved to support future privacy-preserving, aggregate usage measurement, without identifying you</td>
+                    <td>Stored on your device, and sent to our analytics processor (TelemetryDeck) alongside usage events</td>
+                    <td>To measure aggregate product usage and distinguish paid vs. free installs, without identifying you</td>
                     <td>Legitimate interests (improving the App)</td>
                 </tr>
                 <tr>
                     <td><strong>Usage &amp; analytics events</strong> — e.g. "onboarding completed", "focus block created", a "paid/free" flag. No content of your tasks is included.</td>
-                    <td>Recorded on your device only. Not currently transmitted off the device.</td>
+                    <td>Recorded on your device, and forwarded to our privacy-focused analytics processor (TelemetryDeck)</td>
                     <td>To understand which features help and fix what doesn't</td>
                     <td>Legitimate interests</td>
                 </tr>
@@ -215,21 +215,19 @@
         providers strictly to run the App:</p>
         <ul>
             <li><strong>Apple Inc.</strong> — iCloud/CloudKit stores your synced content in your own private database; the App Store and StoreKit process any purchases. Your use of iCloud and the App Store is also governed by Apple's privacy policy.</li>
+            <li><strong>TelemetryDeck GmbH (Germany)</strong> — receives the anonymous install identifier and the usage events described above to produce aggregate, privacy-preserving analytics. We chose TelemetryDeck because it does not build advertising profiles or sell data, and it processes data within the European Union.</li>
         </ul>
-        <p>We do not currently use any third-party analytics or advertising provider, and no usage data
-        leaves your device. If we later introduce a privacy-preserving analytics provider, we will update
-        this policy to name it before any data is transmitted.</p>
-        <p>We may disclose information if required by law, to enforce our Terms, or to protect our rights,
-        safety, or property.</p>
+        <p>We do not use advertising networks or data brokers, and we do not sell or share your personal
+        information. We may disclose information if required by law, to enforce our Terms, or to protect our
+        rights, safety, or property.</p>
     </section>
 
     <section>
         <h2>6. International Data Transfers</h2>
         <p>Your synced content is stored by Apple in the region Apple assigns to your account, under Apple's
-        own safeguards. Because we do not currently transmit any data off your device to our own or
-        third-party servers, we do not carry out international transfers of personal data. If this changes,
-        we will update this policy and ensure appropriate safeguards (such as the European Commission's
-        Standard Contractual Clauses or an adequacy decision) are in place.</p>
+        own safeguards. Analytics data is processed by TelemetryDeck within the European Union. Where any
+        personal data is transferred outside your region, it is protected by appropriate safeguards such as
+        the European Commission's Standard Contractual Clauses or an adequacy decision, as applicable.</p>
     </section>
 
     <section>
@@ -237,7 +235,7 @@
         <ul>
             <li><strong>Your content</strong> is kept until you delete it in the App, delete the App, or remove it from iCloud. Deleting a task removes it locally and from your iCloud on next sync.</li>
             <li><strong>The anonymous install identifier</strong> persists in the keychain until you delete the App and clear its keychain data.</li>
-            <li><strong>Analytics events</strong> are stored only on your device and are capped and overwritten automatically.</li>
+            <li><strong>Analytics events</strong> are stored on your device (capped and overwritten automatically) and are retained by TelemetryDeck only for as long as needed for the purposes above, per its retention limits.</li>
             <li><strong>On-device logs</strong> are capped and overwritten automatically.</li>
         </ul>
     </section>

@@ -109,15 +109,6 @@
 
 <main>
 
-    <div class="fill-note">
-        <strong>⚠️ Draft — review before publishing.</strong> This document was drafted to accurately reflect
-        how the Thyme app handles data, but it is not legal advice. Replace every
-        <strong>[BRACKETED]</strong> placeholder with your real details and have it reviewed by a qualified
-        attorney (or a service such as Termly / iubenda) before you rely on it, especially the GDPR and
-        CCPA sections. If you ship <strong>without</strong> the TelemetryDeck analytics integration active,
-        soften the "Analytics" rows accordingly — as written they describe the intended launch state.
-    </div>
-
     <section>
         <span class="badge">Last updated: July 6, 2026</span>
         <p>This Privacy Policy explains how <strong>Purview LLC</strong> ("we", "us", "our"), the
@@ -133,13 +124,9 @@
         <h2>1. Who We Are (Data Controller)</h2>
         <p>The data controller responsible for your information is:</p>
         <ul>
-            <li><strong>Purview LLC</strong></li>
-            <li>[REGISTERED ADDRESS]</li>
+            <li><strong>Purview LLC</strong> (an Ohio limited liability company)</li>
             <li>Contact: <a class="inline" href="mailto:artstalkerhere@gmail.com">artstalkerhere@gmail.com</a></li>
         </ul>
-        <p>If you are in the European Economic Area (EEA) or the United Kingdom and we are required to
-        appoint a representative under Article 27 of the GDPR / UK GDPR, our representative's details are:
-        <strong>[EU/UK REPRESENTATIVE — or delete this sentence if not applicable]</strong>.</p>
     </section>
 
     <section>
@@ -177,13 +164,13 @@
                 </tr>
                 <tr>
                     <td><strong>Anonymous install identifier</strong> — a random UUID generated on first launch. It is <strong>not</strong> tied to your name, email, Apple ID, or device ID.</td>
-                    <td>Device keychain; sent to our analytics processor with usage events</td>
-                    <td>To measure aggregate product usage and distinguish paid vs. free installs, without identifying you</td>
+                    <td>Stored on your device only. Not currently transmitted off the device.</td>
+                    <td>Reserved to support future privacy-preserving, aggregate usage measurement, without identifying you</td>
                     <td>Legitimate interests (improving the App)</td>
                 </tr>
                 <tr>
                     <td><strong>Usage &amp; analytics events</strong> — e.g. "onboarding completed", "focus block created", a "paid/free" flag. No content of your tasks is included.</td>
-                    <td>On your device, and (at launch) forwarded to our privacy-focused analytics processor</td>
+                    <td>Recorded on your device only. Not currently transmitted off the device.</td>
                     <td>To understand which features help and fix what doesn't</td>
                     <td>Legitimate interests</td>
                 </tr>
@@ -228,18 +215,21 @@
         providers strictly to run the App:</p>
         <ul>
             <li><strong>Apple Inc.</strong> — iCloud/CloudKit stores your synced content in your own private database; the App Store and StoreKit process any purchases. Your use of iCloud and the App Store is also governed by Apple's privacy policy.</li>
-            <li><strong>[ANALYTICS PROCESSOR — e.g. "TelemetryDeck GmbH (Germany)"]</strong> — receives the anonymous install identifier and usage events described above to produce aggregate, privacy-preserving analytics. Chosen because it does not build advertising profiles.</li>
         </ul>
+        <p>We do not currently use any third-party analytics or advertising provider, and no usage data
+        leaves your device. If we later introduce a privacy-preserving analytics provider, we will update
+        this policy to name it before any data is transmitted.</p>
         <p>We may disclose information if required by law, to enforce our Terms, or to protect our rights,
         safety, or property.</p>
     </section>
 
     <section>
         <h2>6. International Data Transfers</h2>
-        <p>Your synced content is stored by Apple in the region Apple assigns to your account. Analytics
-        data is processed by our analytics provider <strong>[e.g. within the European Union]</strong>.
-        Where personal data is transferred across borders, it is protected by appropriate safeguards such as
-        the European Commission's Standard Contractual Clauses or an adequacy decision, as applicable.</p>
+        <p>Your synced content is stored by Apple in the region Apple assigns to your account, under Apple's
+        own safeguards. Because we do not currently transmit any data off your device to our own or
+        third-party servers, we do not carry out international transfers of personal data. If this changes,
+        we will update this policy and ensure appropriate safeguards (such as the European Commission's
+        Standard Contractual Clauses or an adequacy decision) are in place.</p>
     </section>
 
     <section>
@@ -247,7 +237,7 @@
         <ul>
             <li><strong>Your content</strong> is kept until you delete it in the App, delete the App, or remove it from iCloud. Deleting a task removes it locally and from your iCloud on next sync.</li>
             <li><strong>The anonymous install identifier</strong> persists in the keychain until you delete the App and clear its keychain data.</li>
-            <li><strong>Analytics events</strong> are retained by our analytics processor for no longer than needed for the purposes above, per its retention limits.</li>
+            <li><strong>Analytics events</strong> are stored only on your device and are capped and overwritten automatically.</li>
             <li><strong>On-device logs</strong> are capped and overwritten automatically.</li>
         </ul>
     </section>

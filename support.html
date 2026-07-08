@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thyme – Support</title>
+    <style>
+        :root {
+            --green: #34C759;
+            --green-dark: #248A3D;
+            --bg: #FAFAFA;
+            --surface: #FFFFFF;
+            --text: #1D1D1F;
+            --text-secondary: #6E6E73;
+            --border: #E5E5EA;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #000000;
+                --surface: #1C1C1E;
+                --text: #F5F5F7;
+                --text-secondary: #98989D;
+                --border: #38383A;
+            }
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        header { text-align: center; padding: 60px 20px 24px; }
+        header .icon { font-size: 48px; margin-bottom: 12px; }
+        header h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; }
+        header p { color: var(--text-secondary); margin-top: 8px; font-size: 0.95rem; }
+
+        nav {
+            display: flex; justify-content: center; gap: 8px; flex-wrap: wrap;
+            padding: 0 20px 24px;
+        }
+        nav a {
+            font-size: 0.85rem; font-weight: 600; text-decoration: none;
+            color: var(--green-dark); background: var(--surface);
+            border: 1px solid var(--border); padding: 7px 14px; border-radius: 100px;
+        }
+        nav a[aria-current="page"] { background: var(--green); color: #fff; border-color: var(--green); }
+
+        main { max-width: 720px; margin: 0 auto; padding: 0 20px 80px; }
+
+        section {
+            background: var(--surface); border: 1px solid var(--border);
+            border-radius: 16px; padding: 28px 24px; margin-bottom: 20px;
+        }
+
+        section h2 { font-size: 1.2rem; font-weight: 600; margin-bottom: 12px; letter-spacing: -0.01em; }
+        section h3 { font-size: 1rem; font-weight: 600; margin: 18px 0 8px; color: var(--text); }
+        section p, section li { font-size: 0.93rem; color: var(--text-secondary); line-height: 1.65; }
+        section p + p { margin-top: 10px; }
+        section ul, section ol { padding-left: 20px; margin-top: 8px; }
+        section ul li, section ol li { margin-bottom: 6px; }
+        section ul li strong, section p strong, section ol li strong { color: var(--text); font-weight: 600; }
+
+        .faq { border-bottom: 1px solid var(--border); padding-bottom: 18px; margin-bottom: 18px; }
+        .faq:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+        .contact-card {
+            display: flex; align-items: center; gap: 14px;
+            background: var(--surface); border: 1px solid var(--border);
+            border-radius: 16px; padding: 20px 24px; margin-bottom: 20px;
+        }
+        .contact-card .emoji { font-size: 28px; }
+        .contact-card a { color: var(--green); font-weight: 700; text-decoration: none; font-size: 1.05rem; }
+        .contact-card p { margin-top: 2px; }
+
+        footer { text-align: center; padding: 20px; color: var(--text-secondary); font-size: 0.8rem; }
+        footer a { color: var(--green); text-decoration: none; }
+        a.inline { color: var(--green); }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="icon">🌿</div>
+    <h1>Thyme</h1>
+    <p>Support</p>
+</header>
+
+<nav>
+    <a href="index.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="support.html" aria-current="page">Support</a>
+</nav>
+
+<main>
+
+    <div class="contact-card">
+        <span class="emoji">✉️</span>
+        <div>
+            <p style="color: var(--text); font-weight: 600; margin-bottom: 2px;">Need help? Email us directly.</p>
+            <a href="mailto:artstalkerhere@gmail.com">artstalkerhere@gmail.com</a>
+        </div>
+    </div>
+
+    <section>
+        <p>We typically reply within 1–2 business days. Include your device model and iOS version for any bug
+        report — it helps us reproduce the issue faster. Thyme has no account or sign-in, so we can't look up
+        "your" data on our end; most fixes are things we can walk you through directly.</p>
+    </section>
+
+    <section>
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq">
+            <h3>My focus shield isn't blocking apps</h3>
+            <p>Check three things, in order:</p>
+            <ol>
+                <li>Settings → the shield's app category is still granted under <strong>Screen Time access</strong> (Thyme will show a banner if this was revoked).</li>
+                <li>The habit or focus session is actually inside its scheduled window — shields only activate during the time you configured.</li>
+                <li>If you recently changed the apps/categories being blocked, force-quit and reopen Thyme once so the change propagates to the system shield extension.</li>
+            </ol>
+            <p>If shields still don't fire, email us with the habit's schedule and roughly when it should have activated.</p>
+        </div>
+
+        <div class="faq">
+            <h3>How do I manage, upgrade, downgrade, or cancel my Thyme+ subscription?</h3>
+            <p>All billing is handled by Apple, not by us — we never see your payment details, so subscription
+            changes happen in your Apple ID settings, not in the App:</p>
+            <ol>
+                <li>Open the <strong>Settings</strong> app on your iPhone or iPad</li>
+                <li>Tap your name at the top, then <strong>Subscriptions</strong></li>
+                <li>Select <strong>Thyme+</strong> and choose to change plan or cancel</li>
+            </ol>
+            <p>You can also jump there directly from Thyme: <strong>Settings tab → Thyme+ → Manage Subscription</strong>.
+            Cancelling stops future renewals but keeps your current billing period active — see our
+            <a class="inline" href="terms.html">Terms of Service</a> for the auto-renewal details.</p>
+        </div>
+
+        <div class="faq">
+            <h3>I paid but Thyme+ isn't unlocked</h3>
+            <p>Open <strong>Settings tab → Thyme+ → Restore Purchases</strong>. This re-checks your Apple ID's
+            purchase history and re-applies any active entitlement. If it still doesn't unlock after that,
+            email us — include the approximate purchase date and which plan (monthly, annual, or lifetime).</p>
+        </div>
+
+        <div class="faq">
+            <h3>How do I delete my data?</h3>
+            <p>Thyme doesn't have accounts or sign-in, so there's no "account" to delete — but here's how to
+            remove your data completely:</p>
+            <ul>
+                <li><strong>Individual tasks or habits:</strong> delete them directly in the App at any time.</li>
+                <li><strong>Everything on this device:</strong> delete the Thyme app (press and hold the icon → Remove App). This clears all local data immediately.</li>
+                <li><strong>Everything in iCloud:</strong> Settings app → your name → <strong>iCloud</strong> → <strong>Manage Account Storage</strong> (or <strong>Manage Storage</strong>) → find <strong>Thyme</strong> → delete its data. This removes your synced content from Apple's servers.</li>
+            </ul>
+            <p>If you'd like help doing this, or want confirmation that a specific data type is gone, email us
+            and we'll walk you through it. See our <a class="inline" href="index.html">Privacy Policy</a> for
+            exactly what we collect and where it lives.</p>
+        </div>
+
+        <div class="faq">
+            <h3>Does Thyme see which apps I've chosen to block?</h3>
+            <p>No. Apple's Screen Time frameworks give us only opaque, unreadable tokens for your selections —
+            we cannot see app names, categories, or any of your device activity. Details in the
+            <a class="inline" href="index.html">Privacy Policy</a>, §3.</p>
+        </div>
+
+        <div class="faq">
+            <h3>Something looks broken, or I have a feature request</h3>
+            <p>Email us a description of what happened (or what you'd like to see) and, for bugs, your device
+            model and iOS version. Screenshots help a lot.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Still stuck?</h2>
+        <p>Email <a class="inline" href="mailto:artstalkerhere@gmail.com">artstalkerhere@gmail.com</a> — a real
+        person reads every message.</p>
+    </section>
+
+</main>
+
+<footer>
+    &copy; 2026 Purview LLC. All rights reserved. · <a href="index.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a>
+</footer>
+
+</body>
+</html>
